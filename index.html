@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div>
+            <h2>OFI Testing Equipment, Inc.</h2>
+            <h4>Customer Order Form</h4>
+        </div>
+        <form action="">
+            <div class="boxes">
+                <div class="boxes2">
+                    <div class="tit_boxes2">SHIP TO: <span>(UPS will not ship to a P.O.Box)</span></div>
+                    <div>
+                        <table class="tabla1">
+                            <tr>
+                                <td><label for="fciaShip">COMPANY:</label></td>
+                                <td colspan="3"><input type="text" id="fciaShip" name="fciaShip"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="fadressShip">ADDRESS:</label></td>
+                                <td colspan="3"><input type="text" id="fadressShip" name="fadressShip"></td>
+                            </tr>
+                            <tr>
+                                <td style="width:10%"><label for="fcityShip">CITY:</label></td>
+                                <td style="width:80%"><input type="text" id="fcityShip" name="fcityShip"></td>
+                                <td style="width:7%"><label for="fstateShip">STATE:</label></td>
+                                <td style="width:3%"><input type="text" id="fstateShip" name="fstateShip"></td>
+                            </tr>
+                            <tr>
+                                <td style="width:10%"><label for="fcountryShip">COUNTRY:</label></td>
+                                <td style="width:80%"><input type="text" id="fcountryShip" name="fcountryShip"></td>
+                                <td style="width:5%"><label for="fzipShip">ZIP:</label></td>
+                                <td style="width:5%"><input type="text" id="fzipShip" name="fzipShip"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="fnamedepthip">NAME/DEPT:</label></td>
+                                <td colspan="3"><input type="text" id="fnamedepthip" name="fnamedepthip"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="fphoneShip">PHONE:</label></td>
+                                <td colspan="3"><input type="text" id="fphoneShip" name="fphoneShip"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="ffaxShip">FAX:</label></td>
+                                <td colspan="3"><input type="text" id="ffaxShip" name="ffaxShip"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            <div class="boxes2">
+                <div class="tit_boxes2">BILL TO:</div>
+                    <div>
+                        <table class="tabla1">
+                            <tr>
+                                <td><label for="fciaBill">COMPANY:</label></td>
+                                <td colspan="3"><input type="text" id="fciaBill" name="fciaBill"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="fadressBill">ADDRESS:</label></td>
+                                <td colspan="3"><input type="text" id="fadressBill" name="fadressBill"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="fcityBill">CITY:</label></td>
+                                <td><input type="text" id="fcityBill" name="fcityBill"></td>
+                                <td><label for="fstateBill">STATE:</label></td>
+                                <td><input type="text" id="fstateBill" name="fstateBill"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="fcountryBill">COUNTRY:</label></td>
+                                <td><input type="text" id="fcountryBill" name="fcountryBill"></td>
+                                <td><label for="fzipBill">ZIP:</label></td>
+                                <td><input type="text" style="width:5%" id="fzipBill" name="fzipBill"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="fnamedepthip">NAME/DEPT:</label></td>
+                                <td colspan="3"><input type="text" id="fnamedepthip" name="fnamedepthip"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="fphoneBill">PHONE:</label></td>
+                                <td colspan="3"><input type="text" id="fphoneBill" name="fphoneBill"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="ffaxBill">FAX:</label></td>
+                                <td colspan="3"><input type="text" id="ffaxBill" name="ffaxBill"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="ordencompra">
+                <!--orden de compra-->
+                <table class="tabla2">
+                    <tr>
+                        <td style="width:30%"><label for="fpon">PURCHASE ORDER NUMER:</label></td>
+                        <td><input type="text" id="fpon" name="fpon"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="boxes">
+                <!--Informacion del pago-->
+                <div class="boxes2">
+                    <div>
+                        <table class="tabla1">
+                           <tr>
+                                <td style="width:25%">
+                                    <label><input type="radio" value="paymentEnclose" name="pago">Payment Enclose $</label>
+                                </td>
+                                <td><input type="text" id="payment" name="payment"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="font-style: italic;">&nbsp;&nbsp;&nbsp;&nbsp;(include Freight and Taxes if Applicable)</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <label><input type="radio" value="creditCard" name="pago">Credit Card Sales, Personal/Company</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="account">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Account Number:</label></td>
+                                <td><input type="text" id="account" name="account"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="expiration">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Expiration Date:</label></td>
+                                <td><input type="date" id="expiration" name="expiration"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="name">Name:</label></td>
+                                <td><input type="text" id="name" name="name"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="font-style: italic;">(Please PRINT Name as it Appears on Card)</td>
+                            </tr>
+                            <tr>
+                                <td><label for="signature">Signature:</label></td>
+                                <td><input type="text" id="signature" name="signature"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="boxes2">
+                    <div>
+                        <table class="tabla1">
+                            <tr>
+                                <td colspan="2">
+                                <label><input type="radio" value="billme" name="pago">Please Bill Me</label>
+                                </td>
+                            </tr>
+                            <tr>
+                               <td><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OFITE Customer Account #:</label></td>
+                                <td><input type="text" id="ofite" name="ofite"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <label><input type="radio" value="visa" name="pago">VISA</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <label><input type="radio" value="mastercard" name="pago">MASTERCARD</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <label><input type="radio" value="american" name="pago">AMERICAN EXPRESS</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <label><input type="radio" value="catalog" name="pago">PLEASE SEND CATALOG</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+            <table id="pdto">
+                <thead>
+                    <tr>
+                        <th class="qty">QTY</th>
+                        <th class="partno">PART NO</th>
+                        <th class="description">DESCRIPTION</th>
+                        <th class="unitprice">UNIT PRICE</th>
+                        <th class="totalprice">TOTAL PRICE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <footer>
+        <p class="primerpie"><i>Mail/Shipping:</i> 1006 West 34th  Street, Houston, TX 77018-6321 U.S.A.</p>
+        <p class="segundopie"><i>Tele:</i> (713) 880-9885 or (887) 837-8683 (toll free)&nbsp;&nbsp;&nbsp;<i>Fax:</i> (713) 880-9886&nbsp;&nbsp;&nbsp;<i>E-Mail:</i> sales@ofite.com</p>
+        <p class="ultimopie"><i><b>You can also order online at www.ofite.com!</b></i></p>
+    </footer>
+</body>
+</html>

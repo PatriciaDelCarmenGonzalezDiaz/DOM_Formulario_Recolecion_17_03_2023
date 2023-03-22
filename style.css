@@ -1,0 +1,117 @@
+h2, h4 {
+    text-align: center;
+}
+
+.boxes {
+    border: 0px;
+    display: flex;
+}
+
+.boxes2 {
+    flex: 1;
+    border: none;
+}
+.boxes2:first-child {
+    margin-right: 20px;
+}
+
+.tit_boxes2 {
+    background-color: black;
+    color:aliceblue;
+    padding: 10px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.tabla1 {
+    width: 100%;
+}
+
+.ordencompra {
+    border-bottom: solid 6px black;
+    padding: 10px 20px;
+}
+.tabla2 {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+input[type=radio] {
+    padding: 0.5em;
+    appearance: none;
+    outline: 0.1em solid black;
+    outline-offset: 0.1em;
+}
+  
+input[type=radio]:checked {
+    display: inline-block;
+    background-color: #000;
+}
+button {
+    background-color: darkgray;
+    border-radius: 4px;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    
+}
+#pdto {
+    border-collapse: collapse;
+    width: 100%;
+}
+#pdto thead {
+    background-color: lightgray;
+}
+#pdto td, #pdto th {
+    border: 1px solid black;
+    padding: 8px;
+    empty-cells: show;
+    height: 1rem;
+}
+
+.qty {
+    width: 9%;
+}
+
+.partno {
+    width: 13%;
+}
+
+.description {
+  width: 40%;
+}
+.unitprice {
+    width: 19%;
+}
+.totalprice {
+    width: 19%;
+}
+
+footer {
+    text-align: center;
+}
+.primerpie{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.segundopie{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.ultimopie {
+    font-size:x-large;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
