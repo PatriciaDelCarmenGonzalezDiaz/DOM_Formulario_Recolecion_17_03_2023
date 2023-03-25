@@ -29,6 +29,13 @@ input[type=text] {
     border-bottom: 2px solid black;
 }
 
+#pdto input {
+    width: 100%;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    border: none;
+}
+
 .tabla1 {
     width: 100%;
 }
